@@ -29,7 +29,7 @@ end
 
 def valid_phone_number?(phone)
   #binding.pry
- if phone.match(/.[0-9]{3}+.[0-9]{3}+.[0-9]{3,4}/) == nil
+ if phone.match(/.[0-9]{3}+.[0-9]{3}+.[0-9]{3,4}|[0-9]{10}/) == nil
    binding.pry
    false
  else
