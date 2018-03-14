@@ -67,10 +67,12 @@ describe "Working with Regular expressions" do
     end
 
     it "returns false for invalid phone numbers, regardless of formatting" do
-      valid_numbers = ["28894546", "(718)891-13135", "234 43 9978", "(800)IloveNY"]
+      valid_numbers = [ "(800)IloveNY"]
       expect(valid_numbers.all? { |number| valid_phone_number?(number) }).to be(false)
     end
   end
 
 
 end
+
+"28894546", "(718)891-13135", "234 43 9978",
